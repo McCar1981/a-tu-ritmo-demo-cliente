@@ -53,10 +53,10 @@
 .mock-teacher-card:nth-child(3){--portrait-scale:1.45;--portrait-y:0%}
 .mock-teacher-card:nth-child(4){--portrait-scale:1.4;--portrait-y:-6%}
 .mock-teacher-card:nth-child(5){--portrait-scale:1.3;--portrait-y:-23%}
-.mock-teacher-card:nth-child(6){--portrait-scale:1.3;--portrait-y:-40%}
+.mock-teacher-card:nth-child(6){--portrait-scale:1.3;--portrait-y:-36%}
 .mock-teacher-card:nth-child(7){--portrait-scale:1.25;--portrait-y:-7%}
 .mock-teacher-card:nth-child(8){--portrait-scale:1.25;--portrait-y:0%}
-.mock-teacher-card:nth-child(9){--portrait-scale:2.2;--portrait-y:-53%}
+.mock-teacher-card:nth-child(9){--portrait-scale:1.8;--portrait-y:5%}
 .mock-teacher-card:nth-child(9) .mock-teacher-art{background-image:none}
 .mock-teacher-card:nth-child(9) .mock-teacher-art img{opacity:1;transform:translateY(var(--portrait-y)) scale(var(--portrait-scale))}
 
@@ -76,5 +76,5 @@
   .mock-teacher-copy strong{font-size:.72rem}
   .mock-teacher-copy small{font-size:.6rem}
   .mock-teacher-card:nth-child(5){--portrait-y:-12%}
-  .mock-teacher-card:nth-child(6){--portrait-y:-18%}
+  .mock-teacher-card:nth-child(6){--portrait-y:-14%}
 }
