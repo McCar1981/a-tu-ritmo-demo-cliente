@@ -102,5 +102,66 @@
   .mock-class-copy{flex:1;padding:8px 9px 9px;justify-content:flex-start}
   .mock-class-copy strong{font-size:.76rem;line-height:1.15}
   .mock-class-copy small{display:none}
-  .mock-class-copy>span{font-size:.62rem;padding-top:4px;white-space:nowrap}
+  .mock-class-copy>span{font-size:.62rem;padding-top:4px}
+}
+
+.discipline-professors h2{margin:5px 0 18px}
+.discipline-profile-list{display:grid;gap:16px}
+.discipline-professors-intro{max-width:850px;margin:0 0 22px}
+.discipline-profile-card{display:grid;grid-template-columns:220px minmax(0,1fr);overflow:hidden;background:#fff;border:1px solid #f0dbe5;border-radius:16px}
+.discipline-profile-photo{min-height:255px;background:#f8e5ef;overflow:hidden}
+.discipline-profile-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom}
+.discipline-profile-copy{padding:22px 28px;align-self:center}
+.discipline-profile-copy h3{margin:0 0 5px;font-size:1.45rem}
+.discipline-profile-copy p{font-size:.86rem;line-height:1.5;margin:9px 0}
+.discipline-profile-copy .discipline-profile-specialty{font-size:.78rem;font-weight:750;color:#c50877}
+.discipline-profile-copy .inline-link{display:inline-block;margin-top:8px}
+.bio-card{scroll-margin-top:105px}
+.bio-photo{height:100%;min-height:290px}
+.bio-content{padding:22px 0}
+.bio-specialty{color:#c50877;font-weight:750}
+.bio-content .button{margin:6px 0 0}
+.class-page-actions,.dj-actions{padding-top:28px}
+.mock-event-card{height:auto;min-height:112px;align-items:stretch}
+.mock-event-photo{min-height:112px}
+@media(max-width:650px){
+  .bio-card{display:block;padding-right:0}
+  .bio-photo{position:relative;display:block;height:250px;min-height:250px;overflow:hidden}
+  .bio-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+  .bio-content{padding:18px 20px 22px}
+  .bio-card h2{font-size:1.55rem}
+  .bio-card p{font-size:.83rem;line-height:1.5}
+  .mock-event-card{min-height:160px}
+  .mock-event-photo{min-height:160px}
+  .mock-event-congress,.mock-event-entrance{background-image:linear-gradient(to bottom,transparent 55px,#f7ddeb 115px),url('assets/mockup/home-reference.png')}
+  .mock-event-congress{background-position:0 0,-41px -1492px}
+  .mock-event-entrance{background-position:0 0,-733px -1492px}
+}
+.home-copy-section{padding:34px 0;border-top:1px solid #f2dfe9;background:#fffafc}
+.home-copy-section h2{font-size:clamp(1.8rem,2.8vw,2.65rem);margin:0 0 10px}
+.home-copy-section p{font-size:.86rem;line-height:1.45;margin:0}
+.home-copy-intro{max-width:810px;margin:0 0 18px!important}
+.home-copy-split{display:grid;grid-template-columns:1.5fr .8fr;gap:35px;align-items:center}
+.home-copy-action{background:#fff;border:1px solid #f0dce6;border-radius:14px;padding:20px}
+.home-copy-action .button{margin-top:14px}
+.home-pillar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}
+.home-pillar-grid article,.home-dj-grid article{background:#fff;border:1px solid #f0dce6;border-radius:13px;padding:18px}
+.home-pillar-grid h3,.home-dj-grid h3{font-size:1rem;margin:0 0 8px}
+.home-pillar-grid p,.home-dj-grid p{font-size:.75rem}
+.home-dj-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0 16px}
+.home-faq .faq-list{margin:17px 0 20px}
+.home-closing{background:#fce7f2;text-align:center}
+.home-closing h2{max-width:700px;margin:0 auto 18px}
+.mock-events>.shell>.home-copy-intro{font-size:.75rem;max-width:750px}
+.home-contact-prompt{display:flex;gap:18px;align-items:center;justify-content:space-between;padding-top:14px}
+.home-contact-prompt p{font-size:.72rem;line-height:1.35;margin:0;max-width:770px}
+.home-contact-prompt .inline-link{font-size:.72rem;white-space:nowrap}
+@media(max-width:800px){.home-copy-split{grid-template-columns:1fr}.home-pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.home-copy-section{padding:30px 0}.home-copy-section h2{font-size:1.8rem}.home-dj-grid{grid-template-columns:1fr}.home-pillar-grid{gap:8px}.home-pillar-grid article{padding:13px}.home-pillar-grid h3{font-size:.85rem}.home-pillar-grid p{font-size:.69rem}.home-contact-prompt{display:block}.home-contact-prompt .inline-link{display:inline-block;margin-top:8px}}
+@media(max-width:650px){
+  .discipline-profile-card{grid-template-columns:1fr}
+  .discipline-profile-photo{height:190px;min-height:0}
+  .discipline-profile-copy{padding:17px 18px 20px}
+  .discipline-profile-copy h3{font-size:1.25rem}
+  .discipline-profile-copy p{font-size:.8rem}
 }
