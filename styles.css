@@ -117,10 +117,19 @@
 .discipline-profile-copy .discipline-profile-specialty{font-size:.78rem;font-weight:750;color:#c50877}
 .discipline-profile-copy .inline-link{display:inline-block;margin-top:8px}
 .bio-card{scroll-margin-top:105px}
-.bio-photo{height:100%;min-height:290px}
+.bio-photo{height:100%;min-height:290px;overflow:hidden}
 .bio-content{padding:22px 0}
 .bio-specialty{color:#c50877;font-weight:750}
 .bio-content .button{margin:6px 0 0}
+@media(min-width:651px){
+  #jonathan .bio-photo img{transform:translateY(10px) scale(1.55);transform-origin:center center}
+  #joseba-y-arantza .bio-photo img{transform:scale(1.45);transform-origin:center bottom}
+  #ana-y-villy .bio-photo img{transform:scale(1.35);transform-origin:center bottom}
+  #irene-soto .bio-photo img{transform:scale(2.25);transform-origin:center bottom}
+  #merihan .bio-photo img{transform:scale(2.5);transform-origin:center bottom}
+  #nati-natalia .bio-photo img{transform:scale(1.9);transform-origin:center bottom}
+  #unai-gallastegui .bio-photo img{transform:scale(1.25);transform-origin:70% bottom}
+}
 .class-page-actions,.dj-actions{padding-top:28px}
 .mock-event-card{height:auto;min-height:112px;align-items:stretch}
 .mock-event-photo{min-height:112px}
