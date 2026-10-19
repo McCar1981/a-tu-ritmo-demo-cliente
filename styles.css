@@ -88,3 +88,19 @@
 .mock-crop-6{background-image:url('assets/clases/portadas/sevillanas.webp')}
 .mock-crop-7{background-image:url('assets/clases/portadas/danza-oriental.webp')}
 .mock-crop-8{background-image:url('assets/clases/portadas/taichi.webp')}
+
+.mock-teacher-card:nth-child(10),.mock-teacher-card:nth-child(11){--portrait-scale:1;--portrait-y:0%}
+@media(min-width:801px){
+  .mock-teacher-card:nth-child(10){grid-column:6 / span 5}
+  .mock-teacher-card:nth-child(11){grid-column:11 / span 5}
+}
+
+@media(max-width:560px){
+  .mock-class-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .mock-class-card{height:174px;flex-direction:column}
+  .mock-class-photo{flex:0 0 96px;width:100%;height:96px;background-position:center 15%}
+  .mock-class-copy{flex:1;padding:8px 9px 9px;justify-content:flex-start}
+  .mock-class-copy strong{font-size:.76rem;line-height:1.15}
+  .mock-class-copy small{display:none}
+  .mock-class-copy>span{font-size:.62rem;padding-top:4px;white-space:nowrap}
+}
