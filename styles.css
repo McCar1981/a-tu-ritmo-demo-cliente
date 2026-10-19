@@ -78,3 +78,13 @@
   .mock-teacher-card:nth-child(5){--portrait-y:-12%}
   .mock-teacher-card:nth-child(6){--portrait-y:-25%}
 }
+
+.mock-class-photo{background-size:cover;background-position:center}
+.mock-crop-1{background-image:url('assets/clases/portadas/salsa.webp')}
+.mock-crop-2{background-image:url('assets/clases/portadas/bachata.webp')}
+.mock-crop-3{background-image:url('assets/clases/portadas/zouk-brasileno.webp')}
+.mock-crop-4{background-image:url('assets/clases/portadas/kizomba.webp')}
+.mock-crop-5{background-image:url('assets/clases/portadas/samba-de-gafieira.webp')}
+.mock-crop-6{background-image:url('assets/clases/portadas/sevillanas.webp')}
+.mock-crop-7{background-image:url('assets/clases/portadas/danza-oriental.webp')}
+.mock-crop-8{background-image:url('assets/clases/portadas/taichi.webp')}
