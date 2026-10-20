@@ -255,3 +255,86 @@
   .pricing-cta .button{margin-top:18px}
 }
 @media(max-width:390px){.schedule-class{display:block}.schedule-time{margin-bottom:5px}}
+
+/* The schedule page shares the school's lively imagery and pink palette. */
+.schedule-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 5% 0%,#9f135e 0,transparent 35%),linear-gradient(120deg,#351127 0%,#561735 55%,#a51468 100%);color:#fff}
+.schedule-hero:before,.schedule-hero:after{content:"";position:absolute;pointer-events:none;transform:rotate(-24deg);background:rgba(248,55,155,.12)}
+.schedule-hero:before{width:38vw;height:120%;top:-40%;left:-24vw}
+.schedule-hero:after{width:22vw;height:130%;bottom:-80%;right:-4vw}
+.schedule-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center;min-height:550px;padding-block:58px}
+.schedule-hero-copy{position:relative;z-index:2}
+.schedule-hero-kicker{display:inline-flex;align-items:center;gap:9px;color:#ffa8d6;font-size:.75rem;font-weight:850;letter-spacing:.16em}
+.schedule-hero-kicker:before{content:"";width:23px;height:2px;background:#ff69bb}
+.schedule-hero h1{max-width:630px;margin:18px 0 15px;color:#fff;font-size:clamp(3.4rem,5.2vw,5.7rem);line-height:.98}
+.schedule-hero p{max-width:540px;margin:0;color:#f7d8e9;font-size:1rem;line-height:1.55}
+.schedule-hero .button{border-radius:30px}
+.schedule-hero .button-outline{border-color:#f8b9dc;color:#fff;background:rgba(255,255,255,.05)}
+.schedule-hero .button-outline:hover{color:#fff;background:rgba(255,255,255,.2)}
+.schedule-hero-facts{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.schedule-hero-facts span{border:1px solid rgba(255,255,255,.27);border-radius:30px;padding:7px 12px;color:#fff;font-size:.72rem;font-weight:760;background:rgba(255,255,255,.08)}
+.schedule-hero-art{position:relative;display:grid;place-items:center;min-height:400px}
+.schedule-hero-glow{position:absolute;inset:4% 4% 0 17%;border-radius:50%;background:#ef168e;filter:blur(45px);opacity:.5;animation:scheduleGlow 5s ease-in-out infinite alternate}
+.schedule-hero-main{position:relative;width:90%;height:370px;object-fit:cover;object-position:center;border:9px solid rgba(255,255,255,.94);border-radius:23px;box-shadow:0 25px 65px rgba(24,3,19,.32);transform:rotate(3deg)}
+.schedule-hero-inset{position:absolute;left:-4%;bottom:-4%;width:32%;height:175px;object-fit:cover;border:7px solid #fff;border-radius:17px;box-shadow:0 16px 35px rgba(23,3,17,.38);transform:rotate(-9deg);animation:scheduleFloat 5s ease-in-out infinite}
+.schedule-hero-stamp{position:absolute;right:-2%;top:3%;display:grid;place-items:center;width:120px;height:120px;border:3px solid #fff;border-radius:50%;background:#ed168d;color:#fff;box-shadow:0 10px 25px rgba(38,5,28,.32);font-family:Georgia,serif;font-size:1.35rem;font-style:italic;font-weight:800;transform:rotate(14deg)}
+.schedule-course,.schedule-pricing{scroll-margin-top:82px}
+.schedule-course{background:radial-gradient(circle at 90% 1%,#ffe5f1 0,transparent 27%),#fff9fc}
+.schedule-photo-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:0 0 22px}
+.schedule-photo-card{position:relative;overflow:hidden;height:154px;border-radius:15px;background:#3b2035;isolation:isolate;box-shadow:0 9px 22px rgba(47,15,35,.12)}
+.schedule-photo-card:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(30,4,22,.83),transparent 70%)}
+.schedule-photo-card img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transition:transform .45s ease}
+.schedule-photo-card:hover img{transform:scale(1.08)}
+.schedule-photo-card span{position:absolute;z-index:1;bottom:13px;left:17px;color:#fff;font-size:1.04rem;font-weight:850;line-height:1.1;text-shadow:0 2px 8px rgba(0,0,0,.3)}
+.schedule-photo-card small{display:block;margin-top:5px;font-size:.68rem;font-weight:650;color:#ffe7f3}
+.schedule-day-tab{position:relative;overflow:hidden;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.schedule-day-tab:hover{transform:translateY(-3px);box-shadow:0 7px 15px rgba(92,29,68,.12)}
+.schedule-day-tab[aria-selected=true]{background:linear-gradient(110deg,#e20b8c,#a7197e);box-shadow:0 9px 18px rgba(216,24,131,.25)}
+.schedule-day-panel{animation:scheduleRise .35s ease-out both}
+.schedule-room-heading{padding:4px 2px 7px;border-bottom:2px solid #f3d7e6}
+.schedule-room:nth-child(2) .schedule-room-heading{border-bottom-color:#e5d5f3}
+.schedule-room-mark{background:#df1687;color:#fff}
+.schedule-room:nth-child(2) .schedule-room-mark{background:#8043a6;color:#fff}
+.schedule-class{--schedule-accent:#d81883;--schedule-tint:#fff6fb;position:relative;border-left:5px solid var(--schedule-accent);background:var(--schedule-tint);box-shadow:0 2px 6px rgba(55,19,43,.03);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.schedule-class:hover{transform:translateX(4px);box-shadow:0 7px 15px rgba(55,19,43,.1)}
+.schedule-room:nth-child(2) .schedule-class{background:var(--schedule-tint);border-color:#f2dce9;border-left-color:var(--schedule-accent)}
+.schedule-time,.schedule-room:nth-child(2) .schedule-time{color:var(--schedule-accent)}
+.schedule-class-salsa{--schedule-accent:#d92671;--schedule-tint:#fff2f8}
+.schedule-class-bachata{--schedule-accent:#bc238f;--schedule-tint:#fcf1fb}
+.schedule-class-zouk{--schedule-accent:#7743bd;--schedule-tint:#f8f3ff}
+.schedule-class-flamenco{--schedule-accent:#d76928;--schedule-tint:#fff6ee}
+.schedule-class-kizomba{--schedule-accent:#078a93;--schedule-tint:#effbfb}
+.schedule-class-samba{--schedule-accent:#0a8e65;--schedule-tint:#effaf5}
+.schedule-class-danza{--schedule-accent:#a14cb3;--schedule-tint:#fbf2fc}
+.schedule-class-taichi{--schedule-accent:#537b61;--schedule-tint:#f2f8f3}
+.schedule-pricing{background:radial-gradient(circle at 0% 15%,#f9daee 0,transparent 30%),linear-gradient(160deg,#fff,#fff1f8)}
+.pricing-card{transition:transform .25s ease,box-shadow .25s ease}
+.pricing-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(93,27,67,.12)}
+.pricing-card-featured{background:linear-gradient(130deg,#fff 50%,#ffe1f0)}
+.pricing-card-featured .pricing-icon{background:#d81883;color:#fff}
+.pricing-cta{background-image:linear-gradient(90deg,rgba(44,11,32,.96) 0%,rgba(53,13,39,.92) 55%,rgba(67,15,48,.55) 100%),url('assets/home/clase-de-baile-a-tu-ritmo.png');background-size:cover;background-position:center 46%;box-shadow:0 18px 35px rgba(54,17,39,.15)}
+@keyframes scheduleRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes scheduleFloat{0%,100%{transform:translateY(0) rotate(-9deg)}50%{transform:translateY(-9px) rotate(-6deg)}}
+@keyframes scheduleGlow{from{opacity:.33;transform:scale(.94)}to{opacity:.6;transform:scale(1.08)}}
+@media(max-width:900px){
+  .schedule-hero-grid{gap:30px;min-height:470px}
+  .schedule-hero h1{font-size:clamp(2.8rem,5vw,4rem)}
+  .schedule-hero-main{height:320px}
+  .schedule-hero-inset{height:130px}
+  .schedule-hero-stamp{width:90px;height:90px;font-size:1rem}
+}
+@media(max-width:650px){
+  .schedule-hero-grid{grid-template-columns:1fr;gap:15px;padding-block:42px 28px}
+  .schedule-hero h1{font-size:clamp(2.8rem,11vw,4rem)}
+  .schedule-hero p{font-size:.88rem}
+  .schedule-hero .button-row{gap:8px;margin-top:20px}
+  .schedule-hero .button{font-size:.75rem;padding-inline:16px;min-height:42px}
+  .schedule-hero-facts{margin-top:17px}
+  .schedule-hero-art{min-height:255px}
+  .schedule-hero-main{width:89%;height:225px;border-width:6px}
+  .schedule-hero-inset{width:30%;height:105px;border-width:5px;left:1%;bottom:0}
+  .schedule-hero-stamp{width:74px;height:74px;right:0;top:2%;font-size:.8rem}
+  .schedule-photo-strip{display:flex;gap:10px;overflow-x:auto;padding:0 0 8px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+  .schedule-photo-card{flex:0 0 72%;height:144px;scroll-snap-align:start}
+  .schedule-class:hover{transform:none}
+}
+@media(prefers-reduced-motion:reduce){.schedule-hero-copy,.schedule-hero-glow,.schedule-hero-inset,.schedule-day-panel{animation:none}.schedule-photo-card img,.schedule-class,.schedule-day-tab,.pricing-card{transition:none}}
