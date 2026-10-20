@@ -24,3 +24,30 @@ if(demoForm){
     result.scrollIntoView({behavior:'smooth',block:'nearest'});
   });
 }
+
+const scheduleTabs=[...document.querySelectorAll('.schedule-day-tab')];
+if(scheduleTabs.length){
+  const schedulePanels=scheduleTabs.map(tab=>document.getElementById(tab.getAttribute('aria-controls')));
+  const selectDay=index=>{
+    scheduleTabs.forEach((tab,i)=>{
+      tab.setAttribute('aria-selected',String(i===index));
+      tab.tabIndex=i===index?0:-1;
+      schedulePanels[i].hidden=i!==index;
+    });
+  };
+  scheduleTabs.forEach((tab,index)=>{
+    tab.addEventListener('click',()=>selectDay(index));
+    tab.addEventListener('keydown',event=>{
+      let next=index;
+      if(event.key==='ArrowRight')next=(index+1)%scheduleTabs.length;
+      else if(event.key==='ArrowLeft')next=(index-1+scheduleTabs.length)%scheduleTabs.length;
+      else if(event.key==='Home')next=0;
+      else if(event.key==='End')next=scheduleTabs.length-1;
+      else return;
+      event.preventDefault();
+      selectDay(next);
+      scheduleTabs[next].focus();
+    });
+  });
+  selectDay(0);
+}

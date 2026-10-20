@@ -174,3 +174,84 @@
   .discipline-profile-copy h3{font-size:1.25rem}
   .discipline-profile-copy p{font-size:.8rem}
 }
+
+/* Historical timetable demo, kept visually distinct from current enrolment details. */
+.schedule-disclaimer{background:#3b2035;color:#fff}
+.schedule-disclaimer .shell{display:flex;align-items:center;gap:16px;padding-block:14px;font-size:.78rem}
+.schedule-disclaimer strong{flex:none;color:#ff8ec9;font-size:.72rem;text-transform:uppercase;letter-spacing:.09em}
+.schedule-disclaimer span{color:#f2dce9}
+.schedule-course{background:#fffafc}
+.schedule-section-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}
+.schedule-section-heading .eyebrow{margin-bottom:10px}
+.schedule-section-heading h2{margin-bottom:9px;color:#342033}
+.schedule-section-heading p{max-width:690px;margin:0;font-size:.94rem}
+.schedule-year{flex:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid #edbed7;border-radius:30px;padding:9px 18px;color:#cd0d79;background:#fff;font-size:.8rem;font-weight:800}
+.schedule-day-nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:15px}
+.schedule-day-tab{min-height:52px;border:1px solid #eed6e2;border-radius:12px;background:#fff;color:#51344a;cursor:pointer;font-size:.86rem;font-weight:800;transition:background .2s,color .2s,border-color .2s}
+.schedule-day-tab:hover{background:#fff0f7;border-color:#de8bb9}
+.schedule-day-tab[aria-selected=true]{background:#d81883;color:#fff;border-color:#d81883;box-shadow:0 7px 15px rgba(216,24,131,.18)}
+.schedule-day-panel[hidden]{display:none}
+.schedule-day-panel{background:#fff;border:1px solid #efdbe5;border-radius:20px;padding:24px;box-shadow:0 12px 35px rgba(72,22,52,.045)}
+.schedule-day-title{margin:0 0 17px;font-size:1.45rem;color:#372132}
+.schedule-room-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.schedule-room{min-width:0}
+.schedule-room-heading{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.schedule-room-heading h3{font-size:1rem;margin:0}
+.schedule-room-heading>span:last-child{margin-left:auto;color:#867180;font-size:.72rem}
+.schedule-room-mark{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#fce0ef;color:#ce0876;font-size:.72rem;font-weight:850}
+.schedule-room:nth-child(2) .schedule-room-mark{background:#efe6f7;color:#734a92}
+.schedule-room ul{list-style:none;padding:0;margin:0;display:grid;gap:7px}
+.schedule-class{display:flex;align-items:center;gap:18px;min-height:62px;background:#fff7fb;border:1px solid #f2dce9;border-radius:10px;padding:10px 13px}
+.schedule-room:nth-child(2) .schedule-class{background:#faf6fd;border-color:#e9ddf1}
+.schedule-time{flex:0 0 116px;font-size:.74rem;font-weight:850;color:#c40c75;white-space:nowrap}
+.schedule-room:nth-child(2) .schedule-time{color:#754994}
+.schedule-class strong{font-size:.79rem;line-height:1.3;color:#382538}
+.schedule-footnote{font-size:.74rem;line-height:1.5;color:#806f79;margin:15px 0 0}
+.schedule-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.schedule-pricing{background:linear-gradient(160deg,#fff,#fff4f9)}
+.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.pricing-card{position:relative;overflow:hidden;background:#fff;border:1px solid #efdae5;border-radius:20px;padding:32px;min-height:240px}
+.pricing-card:before{content:"";position:absolute;width:210px;height:210px;right:-85px;top:-120px;border-radius:50%;background:#fae4ef}
+.pricing-card-featured{border-color:#e7b5d0;box-shadow:0 12px 28px rgba(93,27,67,.06)}
+.pricing-card-featured:before{background:#f8d3e8}
+.pricing-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#ffe7f3;color:#d81883;font-size:1.3rem;margin-bottom:16px}
+.pricing-tag{display:block;position:relative;font-size:.79rem;font-weight:800;color:#715269}
+.pricing-price{position:relative;color:#352134;font-size:clamp(3rem,5vw,4.4rem);font-weight:900;letter-spacing:-.07em;line-height:1.1;margin:7px 0 10px}
+.pricing-price small{display:inline-block;margin-left:9px;font-size:.9rem;letter-spacing:0;color:#857080;font-weight:650;vertical-align:baseline}
+.pricing-card p{position:relative;margin:0;font-size:.83rem}
+.pricing-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.pricing-details article{display:flex;align-items:flex-start;gap:12px;padding:18px;background:#fff;border:1px solid #f0dce7;border-radius:14px}
+.pricing-detail-icon{display:grid;place-items:center;flex:0 0 31px;height:31px;border-radius:9px;background:#f9e4ef;color:#cb117b;font-size:.71rem;font-weight:850}
+.pricing-details h3{font-size:.94rem;margin:0 0 5px;letter-spacing:-.02em}
+.pricing-details p{font-size:.75rem;line-height:1.5;margin:0}
+.pricing-cta{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-top:24px;padding:27px 30px;border-radius:18px;background:#3b2035;color:#fff}
+.pricing-cta .eyebrow{color:#ff8fca;margin-bottom:8px}
+.pricing-cta h3{font-size:1.5rem;margin-bottom:5px}
+.pricing-cta p{color:#e7cfdc;font-size:.82rem;margin:0}
+.pricing-cta .button{flex:none}
+@media(max-width:800px){
+  .schedule-course,.schedule-pricing{padding-block:60px}
+  .schedule-section-heading{align-items:start}
+  .schedule-room-grid{gap:12px}
+  .schedule-day-panel{padding:18px}
+  .schedule-class{display:block;min-height:70px}
+  .schedule-time{display:block;margin-bottom:5px}
+  .pricing-details{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .schedule-disclaimer .shell{display:block;padding-block:13px}
+  .schedule-disclaimer strong{display:block;margin-bottom:3px}
+  .schedule-section-heading{display:block}
+  .schedule-section-heading h2{font-size:2.2rem}
+  .schedule-year{margin-top:15px}
+  .schedule-day-nav{display:flex;overflow-x:auto;padding-bottom:5px;scrollbar-width:thin}
+  .schedule-day-tab{flex:0 0 auto;min-width:100px;padding-inline:13px}
+  .schedule-room-grid,.pricing-grid{grid-template-columns:1fr}
+  .schedule-room+.schedule-room{padding-top:16px;border-top:1px solid #eedce8}
+  .schedule-class{display:flex;min-height:58px}
+  .schedule-time{flex-basis:113px;margin:0}
+  .pricing-card{min-height:0;padding:24px}
+  .pricing-cta{display:block;padding:24px}
+  .pricing-cta .button{margin-top:18px}
+}
+@media(max-width:390px){.schedule-class{display:block}.schedule-time{margin-bottom:5px}}
