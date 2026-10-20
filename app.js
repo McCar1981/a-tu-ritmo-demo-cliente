@@ -51,3 +51,16 @@ if(scheduleTabs.length){
   });
   selectDay(0);
 }
+
+const registrationForm=document.getElementById('registration-form');
+if(registrationForm){
+  const requestedPlan=new URLSearchParams(location.search).get('plan');
+  const matchedPlan=[...registrationForm.querySelectorAll('input[name="plan"]')].find(input=>input.value===requestedPlan);
+  if(matchedPlan)matchedPlan.checked=true;
+  registrationForm.addEventListener('submit',event=>{
+    event.preventDefault();
+    const result=registrationForm.querySelector('.registration-result');
+    result.hidden=false;
+    result.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+}
